@@ -1,0 +1,28 @@
+<header>
+  <div>
+    <h1>{{ robot.title }}</h1>
+    <div> {{ robot.error }} </div>
+  </div>
+</header>
+
+<section>
+  <div>
+    <div>X Coordinate: {{robot.data.x}}</div>
+    <div>Y Coordinate: {{robot.data.y}}</div>
+    <div>Direction : {{robot.data.angle}}</div>
+  </div>
+</section>
+
+<section>
+  <div>
+    <button ng-click="refresh()">Refresh</button>
+    <button ng-click="turn('right')">Right</button>
+    <button ng-click="cpuStress()">CPU Stress</button>
+  </div>
+</section>
+
+<footer>
+  <nav>
+    <a href="#/main">Back to search</a>
+  </nav>
+</footer>

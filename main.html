@@ -1,0 +1,14 @@
+<div>
+
+  <h1>{{ main.title }}</h1>
+  <div> {{ main.error }} </div>
+
+  <div>
+    <ul>
+      <li ng-repeat="robotName in main.data">
+        <a href="#/robot/{{robotName}}">{{robotName}}</a>
+      </li>
+    </ul>
+  </div>
+
+</div>
